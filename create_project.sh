@@ -124,6 +124,11 @@ cat << EOF > ${PROJECT_DIR}/.vscode/launch.json
 }
 EOF
 
+cd ${PROJECT_DIR}
+source venv/bin/activate
+cd ${ODOO_DIR}
+python setup.py install
+
 # Open the project in VS Code
 echo "Project ${PROJECT_NAME} created successfully for ${EDITION^^} Edition at ${PROJECT_DIR}!"
 echo "Opening project in VS Code..."

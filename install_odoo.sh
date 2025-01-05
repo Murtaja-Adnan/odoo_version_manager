@@ -72,7 +72,9 @@ sudo npm install -g rtlcss less less-plugin-clean-css
 sudo apt install -y node-clean-css
 
 # Install wkhtmltopdf (adjust .deb filename if needed)
+sudo apt install -y ./libssl1.1_1.1.0g-2ubuntu4_amd64.deb
 sudo apt install -y ./wkhtmltox_0.12.5-1.bionic_amd64.deb
+
 
 # Ensure Odoo directory exists
 mkdir -p ~/odoo
